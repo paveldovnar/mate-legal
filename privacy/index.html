@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Mate Wallet</title>
+<style>*{box-sizing:border-box}:root{color-scheme:light dark;--bg:#fff;--fg:#1c1c1e;--mut:#6b6b70;--line:#d8d8dc;--link:#0a58c2;--soft:#f3f3f5}
+@media(prefers-color-scheme:dark){:root{--bg:#111113;--fg:#ececef;--mut:#9a9aa1;--line:#34343a;--link:#6cb0ff;--soft:#1b1b1f}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+nav{font-size:.9rem;margin-bottom:24px;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--link)}h1{font-size:1.8rem;line-height:1.25;margin:.2em 0 .6em}h2{font-size:1.3rem;margin:1.8em 0 .5em;line-height:1.3}h3{font-size:1.1rem;margin:1.4em 0 .4em}
+p,ul,ol{margin:.8em 0}li{margin:.3em 0}hr{border:0;border-top:1px solid var(--line);margin:1.6em 0}
+blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--line);background:var(--soft)}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--soft);padding:.1em .3em;border-radius:4px;overflow-wrap:anywhere}
+.tw{overflow-x:auto;margin:1em 0}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--soft)}
+.meta{color:var(--mut)}footer{margin-top:48px;color:var(--mut);font-size:.85rem}</style>
+</head>
+<body>
+<main>
+<nav><a href="/">Mate Wallet</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>
+<h1>Privacy Policy — Mate Wallet</h1>
+<p class="meta"><strong>Publisher:</strong> Mate App LLC, United States<br>
+<strong>Application:</strong> Mate Wallet (iOS)<br>
+<strong>Effective date:</strong> 6 October 2026<br>
+<strong>Contact:</strong> <a href="mailto:support@mateapp.org">support@mateapp.org</a> · Mate App LLC, 5830 E 2nd St, Ste 7000 #24268, Casper, WY 82609, USA</p>
+<hr>
+<h2>Short version</h2>
+<p>Mate Wallet has <strong>no servers of its own</strong>. We do not collect, receive or store any personal data about you. There is no account, no registration, no analytics, no crash reporting, no advertising identifier and no tracking of any kind. Your recovery phrase and private keys never leave your device except into your own iCloud Keychain, if you choose to enable backup.</p>
+<p>The app does talk to one third party — <strong>TonAPI</strong> — because a wallet cannot read a blockchain without a node. What that involves is set out below in full.</p>
+<h2>1. We collect nothing</h2>
+<p>Mate App LLC operates no backend. There is no server that receives data from the app. We therefore do not collect, store, process, sell or share:</p>
+<ul><li>your name, e-mail address, phone number or any identity information;</li><li>your recovery phrase, private keys or passwords;</li><li>your wallet address;</li><li>your balance, transactions or contacts;</li><li>your device identifier, advertising identifier or IP address;</li><li>usage analytics, behavioural events or crash reports.</li></ul>
+<p>There is <strong>no analytics SDK and no crash-reporting SDK</strong> in the application. There is no advertising framework. We do not use cookies or any similar technology, because there is no web property involved in the app's operation.</p>
+<h2>2. What stays on your device</h2>
+<div class="tw"><table><thead><tr><th>Data</th><th>Where it is kept</th><th>Protection</th></tr></thead><tbody><tr><td>Your 24-word recovery phrase (working copy)</td><td>Device Keychain, marked device-only (it is not transferred to a new device by backup or restore)</td><td>Requires Face ID / Touch ID, or your device passcode, on every read. Invalidated if the device's biometric enrolment is changed</td></tr><tr><td>Your wallet's public address and public key</td><td>Device Keychain</td><td>Not secret; used to read the blockchain</td></tr><tr><td>Your settings (auto-lock delay, backup status, whether you have verified your phrase, lock-screen counter)</td><td>Standard app preferences on the device</td><td>Removed when you delete the app</td></tr></tbody></table></div>
+<p>None of the above is transmitted to us. We have no technical means to read any of it.</p>
+<h2>3. If you turn on iCloud backup</h2>
+<p>Backup is <strong>optional and off by default</strong>. If you turn it on, a copy of your recovery phrase is written to <strong>your own iCloud Keychain</strong>, operated by Apple under your Apple ID.</p>
+<ul><li><strong>It goes to Apple, not to us.</strong> We never receive it and have no access to it. Apple's handling of it is governed by Apple's own privacy policy.</li><li>It syncs to the other devices signed in to the same Apple ID.</li><li><strong>It is not protected by Face ID or Touch ID.</strong> A synchronized iCloud Keychain item cannot carry a biometric access control list — this is a limitation imposed by Apple's Keychain, not a choice we made. While your device is unlocked, the copy is readable. The local working copy on your device is biometrically protected; the iCloud copy is not.</li><li>Turning backup off removes the copy from iCloud across your devices.</li></ul>
+<h2>4. What the app sends to TonAPI, and why</h2>
+<p>A wallet cannot see a blockchain without asking a node. Mate Wallet asks one provider: <strong>TonAPI</strong> (<code>tonapi.io</code>), operated by TON Apps Group. This is a third party; we do not control it, and its handling of the requests it receives is governed by its own privacy policy and terms, not by this one.</p>
+<p>The application makes requests to TonAPI only — no other host is contacted by the app's own code.</p>
+<div class="tw"><table><thead><tr><th>When</th><th>What is sent</th><th>Why</th></tr></thead><tbody><tr><td>Opening the app / refreshing</td><td>Your wallet address</td><td>To read your USDT balance and account state</td></tr><tr><td>Opening the app / refreshing</td><td>Your wallet address</td><td>To read your transaction history</td></tr><tr><td>Before every signature</td><td>Your wallet address</td><td>To read the current transaction counter (<code>seqno</code>)</td></tr><tr><td>Balance display</td><td>The USDT token identifier</td><td>To fetch exchange rates. Your address is not part of this request</td></tr><tr><td>Typing a <code>.ton</code> domain as recipient</td><td>The domain you typed</td><td>To resolve it to an address</td></tr><tr><td>Preparing a transfer</td><td>Your address, the recipient address, the amount, your comment if you wrote one</td><td>To obtain a fee quote for the gasless transfer</td></tr><tr><td>Sending a transfer</td><td>The signed transaction (which contains the recipient, amount and comment)</td><td>To broadcast it to the network</td></tr></tbody></table></div>
+<p>As with any internet request, the provider also necessarily sees your <strong>IP address</strong> and the fact and timing of the request. Taken together, this allows the provider — and anyone with lawful access to its records — to associate your IP address with your wallet address and your activity. We have no insight into what they retain.</p>
+<p>Requests carry an API key identifying the application, not you. <strong>Your recovery phrase and private keys are never sent to TonAPI or anywhere else.</strong> Signing happens entirely on your device; only the already-signed result is transmitted.</p>
+<p>If you prefer not to expose your IP address to the provider, use a VPN or a similar measure at the device level. The app has no setting for this.</p>
+<h2>5. The blockchain is public and permanent</h2>
+<p>Every transfer you make is written permanently to the public TON blockchain. Your address, the counterparty address, the amount, the time and any comment you attach are visible to anyone, forever. Neither you nor we can delete or alter them. Anyone who learns that an address belongs to you can see its entire history.</p>
+<p>This is a property of the blockchain itself, not of this application.</p>
+<h2>6. Children</h2>
+<p>Mate Wallet is not directed to children. The Terms of Use require you to be at least 18, or the age of majority where you live if that is higher. We do not knowingly collect personal information from anyone of any age, because we collect nothing at all — there is no server to collect it to. For the same reason there is nothing for a parent or guardian to ask us to delete; anything on the device is removed by deleting the app.</p>
+<h2>7. Your rights</h2>
+<p>Data-protection rights such as access, correction, portability and erasure apply to personal data held by a controller. <strong>We hold none</strong>, so there is nothing for us to produce, correct or erase:</p>
+<ul><li>data on your device is removed by deleting the app;</li><li>data in your iCloud Keychain is managed by you, through Apple, under your Apple ID;</li><li>data on the blockchain cannot be removed by anyone, including us — that is a property of a blockchain, not a policy choice;</li><li>the provider that serves blockchain data to the app is a separate company with its own policy; requests about what it retains go to it, not to us.</li></ul>
+<p>If you believe we nevertheless hold personal information about you, write to us at the address in §9 and we will tell you what we find. We expect the answer to be "nothing", and we would rather say so to you directly than have you wonder.</p>
+<p><strong>On the GDPR specifically.</strong> Mate Wallet is not offered in the European Union or the European Economic Area — see the Terms of Use, §11. This policy therefore does not set out a GDPR lawful basis, a representative or a supervisory authority. If that territory decision changes, this section has to be rewritten before the app ships there, not afterwards.</p>
+<h2>8. Changes to this policy</h2>
+<p>The current version is the one published at <a href="https://mateapp.org/privacy/">https://mateapp.org/privacy/</a>. Material changes will be reflected in the version date above.</p>
+<h2>9. Contact</h2>
+<p><a href="mailto:support@mateapp.org">support@mateapp.org</a>.</p>
+</main>
+</body>
+</html>
